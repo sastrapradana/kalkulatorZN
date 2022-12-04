@@ -85,8 +85,7 @@
   cursor: pointer;
 }
 
-#calculator .container ul li {
-  list-style: none;
+#calculator .container ul button {
   font-size: 2rem;
   padding: 10px 20px;
   border: 1px solid black;
@@ -96,6 +95,12 @@
 }
 
 .operator {
+  font-size: 1.3rem;
+  padding: 15px 20px;
+  border: 1px solid black;
+  border-radius: 100px;
+  -webkit-box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
   background-color: black;
   color: white;
   -webkit-transition: .2s;
@@ -110,6 +115,8 @@
   background-color: darkorange;
   -webkit-transition: .2s;
   transition: .2s;
+  border: 1px solid black;
+  outline: none;
 }
 
 .number:hover {
@@ -118,6 +125,8 @@
 
 .hasil {
   width: 200px;
+  height: 50px;
+  border-radius: 100px;
   text-align: center;
   background-color: crimson;
   -webkit-transition: .2s;
@@ -147,14 +156,25 @@
   #calculator h1 {
     margin-top: 10px;
   }
+  #calculator h1 span {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: darkorange;
+    font-family: cursive;
+  }
   #calculator .container {
     padding: 10px;
+    height: 500px;
     margin-top: 30px;
     width: 80%;
     border-radius: 20px;
   }
   #calculator .container .area {
     margin-bottom: 10px;
+  }
+  #calculator .container ul button {
+    font-size: 1.3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

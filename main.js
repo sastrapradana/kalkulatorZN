@@ -12,7 +12,6 @@ const tampilAngka = () => {
     arrNumber.map(n => {
         n.addEventListener('click', () => {
             let a = area.value += n.value;
-            console.log(a);
         })
     })
 }

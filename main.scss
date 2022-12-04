@@ -47,12 +47,10 @@
         ul {
             display: flex;
             justify-content: space-around;
-            // border: 1px solid black;
             margin: 10px;
             width: 90%;
             cursor: pointer;
-            li {
-                list-style: none;
+            button {
                 font-size: 2rem;
                 padding: 10px 20px;
                 border: 1px solid black;
@@ -64,6 +62,11 @@
 }
 
 .operator {
+    font-size: 1.3rem;
+    padding: 15px 20px;
+    border: 1px solid black;
+    border-radius: 100px;
+    box-shadow: 1px 5px 5px rgba(0,0,0,0.5);
     background-color: black;
     color: white;
     transition: .2s;
@@ -76,14 +79,17 @@
 .number {
     background-color: darkorange;
     transition: .2s;
+    border: 1px solid black;
+    outline: none;
     &:hover {
-        // box-shadow: inset 10px 50px 50px rgba(0,0,0,0.5);
         background-color: rgb(177, 102, 10);
     }
 }
 
 .hasil {
     width: 200px;
+    height: 50px;
+    border-radius: 100px;
     text-align: center;
     background-color: crimson;
     transition: .2s;
@@ -115,14 +121,28 @@
         // border: 1px solid black;
         h1 {
             margin-top: 10px;
+            span {
+                display: block;
+                text-align: center;
+                font-size: 2rem;
+                color: darkorange;
+                font-family: cursive;
+            }
         }
         .container {
             padding: 10px;
+            height: 500px;
             margin-top: 30px;
             width: 80%;
             border-radius: 20px;
             .area {
                 margin-bottom: 10px;
+            }
+            ul {
+                button {
+                    font-size: 1.3rem;
+                    // margin: 0 8px;
+                }
             }
         }
 }
